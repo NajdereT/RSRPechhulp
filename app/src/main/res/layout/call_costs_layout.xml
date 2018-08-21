@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Call_Cost_Layout_ID"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:id="@+id/Call_Cost_Dialog_ID"
+        android:layout_width="275dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/ColorDialog"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Call_Cost_Dialog_Header_Text_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="@string/Call_Costs"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/Phone_Header_Textsize" />
+
+        <TextView
+            android:id="@+id/Call_Cost_Dialog_Text_ID"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/Number_Call_Costs"
+            android:textAlignment="center"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/general_phone_addresinfo_textsize" />
+
+        <RelativeLayout
+            android:id="@+id/Button_CallNow_ID"
+            android:layout_width="@dimen/Phone_Buttonwidth"
+            android:layout_height="@dimen/Phone_Buttonheight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_btn_bg"
+            android:gravity="center_vertical"
+            android:onClick="CallRSR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/Button_CallNow_Text_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:drawablePadding="75dp"
+                android:drawableStart="@drawable/main_btn_phone"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/Call_Now"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="@dimen/Phone_Textsize" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Button_Cancel_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/BlueBar"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/main_btn_close"
+        android:onClick="HideCallCostDialog"
+        android:paddingEnd="8dp"
+        android:paddingStart="5dp"
+        android:text="@string/Cancel"
+        android:textColor="@color/TextColorWhite"
+        android:textSize="@dimen/Phone_Textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

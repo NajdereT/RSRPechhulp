@@ -1,0 +1,37 @@
+<resources>
+    <string name="App_Name">RSR </string>
+    <string name="About_RSR_Text">
+        "met de hulpmidelen van RSR blijft u mobiel. RSR is de leverancier van hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste advies.
+        \nWilt u meer weten over onze producten en diensten, kijk dan op www.rsr.nl of bezoek onze showrooms in Silvolde en Nieuwleusen. We zijn iedere werkdag geopend van 8.00 tot 17.00 uur. Hier kunt u diverse hulpmiddelen uitproberen en rustig bekijken wat goed bij uw situatie aansluit. Samen met u zoeken we naar het hulpmiddel dat bij u past. RSR maakt mensen mobiel."
+    </string>
+    <string name="Title_Activity_Maps">Map</string>
+    <string name="Number_Call_Costs">Voor dit nummer betaalt u uw gebruikelijke belkosten.</string>
+    <string name="RSR_Internet_Dialog_Title">Geen internetverbindigng</string>
+    <string name="RSR_Internet_Dialog_Text">Er is geen verbinding mogelijk met het internet. hierdoor kunnen uw locatiegegevens niet worden opgehaald</string>
+    <string name="Gps_Not_Enabled_Text">gps service is uitgeschakeld RSR heeft uw locatie nodig anders werkt de app niet</string>
+    <string name="Open_Location_Settings">ga naar instellingen</string>
+    <string name="Cancel">Annuleren</string>
+    <string name="TryAgain">probeer opnieuw</string>
+    <string name="RSR_Location_Dialog_Title">Locatieservices uitgeschakeld</string>
+    <string name="RSR_Location_Dialog_Text">RSR pechhulp heeft toegang tot uwlocatie nodig. schakel locatietoegang in</string>
+    <string name="Remember_Location">onthoud deze locatie voor het telefoongesprek</string>
+    <string name="Info_Window_Title">Uw Locatie:</string>
+    <string name="Tablet_Contact_Costs">9,4 cent per gesprek plus 2,8 cent per minuut, plus uw gebruikelijke kosten</string>
+    <string name="Contact_Number">0900–7788990</string>
+    <string name="Tablet_Contact_Header_Text">Neem contact op RSR Nederland</string>
+    <string name="Call_RSR_Now">Bel RSR nu</string>
+    <string name="About_RSR">Over RSR</string>
+    <string name="Call_Costs">Belkosten</string>
+    <string name="Call_Now">Bel nu</string>
+    <string name="RSR_Pechhulp">RSR pechhulp</string>
+    <string name="RSR_Revalidatieservice">RSR revalidatieservice</string>
+    <string name="Clock_Img">clock</string>
+    <string name="Phone_Img">phone</string>
+    <string name="Info_Img">image info</string>
+    <string name="Splash_Logo_Info">splash_logo_info</string>
+    <string name="splash_logo_large">splash_logo_large</string>
+    <string name="Splash_Logo">splash_logo</string>
+    <string name="Info_Button">infobutton</string>
+    <string name="Main_Warning_Button">main_btn_warning</string>
+    <string name="mainmenu_background">MainMenu_Background</string>
+</resources>

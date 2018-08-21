@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainMenu_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/MainMenu_Background_Image_ID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/mainmenu_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MyToolbar_ID" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_btn_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/Main_Button_Info_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/Info_Button"
+            android:onClick="ToAboutRSRActivity"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            app:srcCompat="@drawable/main_btn_info"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/Toolbar_Text_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="@string/RSR_Revalidatieservice"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/Button_MainMenu_ID"
+        android:layout_width="@dimen/Phone_Buttonwidth"
+        android:layout_height="@dimen/Phone_Buttonheight"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/main_btn_bg"
+        android:gravity="center_vertical"
+        android:onClick="ToMapsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Button_MainMenu_Text_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/RSR_Pechhulp"
+            android:textAlignment="center"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/Phone_Textsize" />
+
+        <ImageView
+            android:id="@+id/Button_MainMenu_Image_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/Main_Warning_Button"
+            app:srcCompat="@drawable/main_btn_warning" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

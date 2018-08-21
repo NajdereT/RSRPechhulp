@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AboutRSR_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_btn_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/Button_AboutRSR_Back_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_bg"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/menu_arrow"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/About_RSR"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/Background_White_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyToolbar_ID"
+        android:background="@color/BackgroundColorWhite"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyToolbar_ID">
+
+        <ImageView
+            android:id="@+id/Info_Image_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/Info_Img"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/info_bg" />
+
+        <RelativeLayout
+            android:id="@+id/Blue_Bar_ID"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/BlueBar" />
+
+        <TextView
+            android:id="@+id/AboutRSR_Text_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingBottom="50dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="50dp"
+            android:text="@string/About_RSR_Text"
+            android:textColor="@color/TextColorGrey"
+            android:textSize="@dimen/Tablet_Textsize"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/AboutRSR_Image_Bottom"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Splash_Logo_Info"
+            app:srcCompat="@drawable/splash_logo_rsr" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

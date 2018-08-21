@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainMenu_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_btn_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/Toolbar_Text_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="@string/RSR_Revalidatieservice"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/Button_MainMenu2_ID"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/main_btn_bg"
+        android:gravity="center_vertical"
+        android:onClick="ToAboutRSRActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Button_MainMenu_Text2_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/About_RSR"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/Button_MainMenu_Image2_ID"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/Info_Button"
+            app:srcCompat="@drawable/main_btn_info_down" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Button_MainMenu_ID"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="192dp"
+        android:background="@drawable/main_btn_bg"
+        android:gravity="center_vertical"
+        android:onClick="ToMapsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Button_MainMenu_Text_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/RSR_Pechhulp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/Button_MainMenu_Image_ID"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/Main_Warning_Button"
+            app:srcCompat="@drawable/main_btn_warning" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

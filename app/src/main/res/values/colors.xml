@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#3F51B5</color>
+<color name="colorPrimaryDark">#303F9F</color>
+<color name="colorAccent">#FF4081</color>
+<color name="ColorDialog">#aecbd403</color>
+<color name="ColorContactTablet">#a52aa0cc</color>
+<color name="TextColorWhite">#ffffff</color>
+<color name="BackgroundColorWhite">#ffffff</color>
+<color name="TextColorBlack">#000000</color>
+<color name="TextColorGrey">#646464</color>
+<color name="DarkBackgroundColor">#C0000000</color>
+<color name="BlueBar">#0293bb</color>
+</resources>

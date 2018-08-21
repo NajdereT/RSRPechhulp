@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Adress_Info_Window_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Adress_Info_Window_Background_ID"
+        android:layout_width="210dp"
+        android:layout_height="140dp"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/YourLocation_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/Info_Window_Title"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/Phone_Header_Textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RememberCall_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Remember_Location"
+            android:textAlignment="center"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/general_phone_addresinfo_textsize" />
+
+        <TextView
+            android:id="@+id/Adress_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:textAlignment="center"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/general_phone_addresinfo_textsize" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+

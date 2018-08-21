@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MapsActivity_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MapsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_btn_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/Button_MapsActivity_Back_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_bg"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/menu_arrow"
+            android:gravity="center"
+            android:onClick="BackToMainActivity"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/RSR_Pechhulp"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/Fragment_Map_ID"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/MyToolbar_ID"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/MyToolbar_ID" />
+
+    <include
+        android:id="@+id/Include_Call_Costs_Dialog_ID"
+        layout="@layout/call_costs_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Clock_Mini_Image_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="320dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/Clock_Img"
+        android:src="@drawable/clock_mini"
+        android:visibility="visible"
+        map:layout_constraintBottom_toTopOf="@+id/Include_Tablet_Contact_Layout"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/Include_Tablet_Contact_Layout"
+        layout="@layout/tablet_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        map:layout_constraintBottom_toBottomOf="@+id/Fragment_Map_ID"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

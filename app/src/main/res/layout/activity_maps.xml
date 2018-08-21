@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MapsActivity_Layout_ID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MapsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_btn_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/Button_MapsActivity_Back_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_bg"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/menu_arrow"
+            android:gravity="center"
+            android:onClick="BackToMainActivity"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/RSR_Pechhulp"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/Fragment_Map_ID"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/MyToolbar_ID"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyToolbar_ID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/Button_MapsActivity_ID"
+        android:layout_width="@dimen/Phone_Buttonwidth"
+        android:layout_height="@dimen/Phone_Buttonheight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/main_btn_bg"
+        android:onClick="ShowCallCostDialog"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Fragment_Map_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Button_MapsActivity_Text_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:drawablePadding="65dp"
+            android:drawableStart="@drawable/main_btn_tel"
+            android:gravity="center"
+            android:text="@string/Call_RSR_Now"
+            android:textAlignment="center"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="@dimen/Phone_Textsize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Background_Dark_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DarkBackgroundColor"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/Include_Call_Costs_Dialog_ID"
+        layout="@layout/call_costs_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/Fragment_Map_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_Map_ID"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/Clock_Mini_Image_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/Clock_Img"
+        android:src="@drawable/clock_mini"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/Button_MapsActivity_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_Map_ID" />
+
+</android.support.constraint.ConstraintLayout>
